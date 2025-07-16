@@ -1,2 +1,37 @@
 # GradSch
-src and related files storage for GradSch. lecture
+
+
+レポート課題ですが、以下のようにさせてください。
+
+BiSXもしくはSbOXのなかからえらぶ。桝實さんは修論のテーマとのからみでYbOとする
+
+実験室のマシンに接続できる人、自分のWSL２にインストしてる人はmaterialprojectから
+CIFファイルをダウンロードして、計算をすすめてください。非該当の人は
+明日から、こちらが主となって、マシンにジョブを放り投げますので、ご協力ください。
+
+CIFはこちらにあります↓↓
+
+https://legacy.materialsproject.org/
+
+計算項目は（部分）状態密度とバンド図です。
+
+可能でしたらが
+```
+&SYSTEM
+  input_dft = "vdw-df"
+/
+```
+van der Waals相互作用含めてほしいです。
+
+イントロやR＆D（結果と考察）部分については別途相談させてください。
+
+計算担当物質を以下のように決めさせてもらいました（敬称略）。よろしく
+
+```
+片岡 SbOCl mp-989196
+鈴木 SbOBr mp-989189
+土田 SbOF  mp-989191
+松本 BiSCl mp-23318
+吉田 BiSBr mp-23324
+水谷 BiSI mp-23514
+```
