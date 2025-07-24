@@ -13,9 +13,9 @@
 /
 
 ATOMIC_SPECIES
-Sb 121.76 None
-Br 79.904 None
-O 15.999 None
+Sb 121.76 Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+Br 79.904 Br.pbe-n-kjpaw_psl.1.0.0.UPF
+O 15.999 O.pbe-n-kjpaw_psl.1.0.0.UPF
 
 K_POINTS gamma
 

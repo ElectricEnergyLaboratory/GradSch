@@ -13,9 +13,9 @@
 /
 
 ATOMIC_SPECIES
-Bi 208.9804 None
-S 32.06 None
-Br 79.904 None
+Bi 208.9804 Bi.pbe-dn-kjpaw_psl.1.0.0.UPF
+S 32.06 S.pbe-n-kjpaw_psl.1.0.0.UPF
+Br 79.904 Br.pbe-n-kjpaw_psl.1.0.0.UPF
 
 K_POINTS gamma
 
