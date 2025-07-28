@@ -5,6 +5,7 @@
  outdir = '../out'
 /
 &SYSTEM
+  input_dft = "vdw-df"
   occupations='fixed'
   ecutwfc=50
   ecutrho=400   
