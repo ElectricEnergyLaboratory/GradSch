@@ -6,6 +6,7 @@ outdir='../'
 pseudo_dir='./pseudo'
 /
 &SYSTEM
+  input_dft = "vdw-df"
   ntyp             = 3
   nat              = 6
   ibrav            = 0
