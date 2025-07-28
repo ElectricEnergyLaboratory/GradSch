@@ -1,6 +1,13 @@
 &CONTROL
+ calculation = 'scf'
+ prefix = 'SbOBr'
+ pseudo_dir = './pseudo'
+ outdir = '../out'
 /
 &SYSTEM
+  occupations='fixed'
+  ecutwfc=50
+  ecutrho=400   
    ntyp             = 3
    nat              = 6
    ibrav            = 0
@@ -17,8 +24,8 @@ Sb 121.76 Sb.pbe-n-kjpaw_psl.1.0.0.UPF
 Br 79.904 Br.pbe-n-kjpaw_psl.1.0.0.UPF
 O 15.999 O.pbe-n-kjpaw_psl.1.0.0.UPF
 
-K_POINTS gamma
-
+K_POINTS {automatic}
+2 2 2 1 1 1
 CELL_PARAMETERS angstrom
 3.83533600000000 0.00000000000000 0.00000000000000
 0.00000000000000 3.83533600000000 0.00000000000000
