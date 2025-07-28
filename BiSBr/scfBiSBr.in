@@ -1,9 +1,16 @@
 &CONTROL
+ calculation = 'scf'
+ prefix = 'BiSBr'
+ pseudo_dir = './pseudo'
+ outdir = '../out'
 /
 &SYSTEM
-   ntyp             = 3
-   nat              = 12
-   ibrav            = 0
+  ibrav = 0
+  occupations='fixed'
+  ecutwfc=50
+  ecutrho=400
+  ntyp             = 3
+  nat              = 12
 /
 &ELECTRONS
 /
@@ -17,8 +24,8 @@ Bi 208.9804 Bi.pbe-dn-kjpaw_psl.1.0.0.UPF
 S 32.06 S.pbe-n-kjpaw_psl.1.0.0.UPF
 Br 79.904 Br.pbe-n-kjpaw_psl.1.0.0.UPF
 
-K_POINTS gamma
-
+K_POINTS {automatic}
+2 2 2 1 1 1
 CELL_PARAMETERS angstrom
 4.08866300000000 0.00000000000000 0.00000000000000
 0.00000000000000 8.46763900000000 0.00000000000000
