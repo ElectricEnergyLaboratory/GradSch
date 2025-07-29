@@ -1,0 +1,305 @@
+
+     Program PWSCF v.7.4.1 starts on 29Jul2025 at  5: 9:54 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      32 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                    32
+
+     MPI processes distributed on     1 nodes
+     3032 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Sb.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  5S renormalized
+     file Br.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 4P renormalized
+     file O.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= VDW-DF
+                           (   1   4   4   0   1   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Atomic positions and unit cell read from directory:
+     ../out/SbOBr.save/
+
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        1669     845    241               117437    41639    6351
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       7.2477  a.u.
+     unit-cell volume          =     870.6086 (a.u.)^3
+     number of atoms/cell      =            6
+     number of atomic types    =            3
+     number of electrons       =        36.00
+     number of Kohn-Sham states=           22
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     400.0000  Ry
+     Exchange-correlation= VDW-DF
+                           (   1   4   4   0   1   0   0)
+
+     celldm(1)=   7.247735  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   2.286736 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.437304 )  
+
+
+     PseudoPot. # 1 for Sb read from file:
+     ./pseudo/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 6b903ae7923846f66e229fa892705b98
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.2.2
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for Br read from file:
+     ./pseudo/Br.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: b00de77caabc69c0a6b76eb37264f235
+     Pseudo is Projector augmented-wave + core cor, Zval =  7.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1213 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 3 for O  read from file:
+     ./pseudo/O.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: e99d9cef9b487d1ca56f5b95ecd0fd7a
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+     Sb                5.00   121.76000     Sb( 1.00)
+     Br                7.00    79.90400     Br( 1.00)
+     O                 6.00    15.99900     O ( 1.00)
+
+     16 Sym. Ops., with inversion, found ( 8 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        Sb     tau(   1) = (   0.0000000   0.5000000   1.9660627  )
+         2        Sb     tau(   2) = (   0.5000000   0.0000000   0.3206736  )
+         3        Br     tau(   3) = (   0.5000000   0.0000000   1.5521634  )
+         4        Br     tau(   4) = (   0.0000000   0.5000000   0.7345729  )
+         5        O      tau(   5) = (   0.0000000   0.0000000   0.0000000  )
+         6        O      tau(   6) = (   0.5000000   0.5000000   0.0000000  )
+
+     number of k points=     6 (tetrahedron method)
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.1250000   0.1250000   0.0546631), wk =   0.2500000
+        k(    2) = (   0.1250000   0.1250000   0.1639892), wk =   0.2500000
+        k(    3) = (   0.1250000   0.3750000   0.0546631), wk =   0.5000000
+        k(    4) = (   0.1250000   0.3750000   0.1639892), wk =   0.5000000
+        k(    5) = (   0.3750000   0.3750000   0.0546631), wk =   0.2500000
+        k(    6) = (   0.3750000   0.3750000   0.1639892), wk =   0.2500000
+
+     Dense  grid:   117437 G-vectors     FFT dimensions: (  48,  48, 108)
+
+     Smooth grid:    41639 G-vectors     FFT dimensions: (  36,  36,  75)
+
+     Estimated max dynamical RAM per process >     388.98 MB
+
+     The potential is recalculated from file :
+     ../out/SbOBr.save/charge-density
+
+
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     % You are using vdW-DF, which was implemented by the Thonhauser group. %
+     % Please cite the following two papers that made this development      %
+     % possible and the two reviews that describe the various versions:     %
+     %                                                                      %
+     %   T. Thonhauser et al., PRL 115, 136402 (2015).                      %
+     %   T. Thonhauser et al., PRB 76, 125112 (2007).                       %
+     %   K. Berland et al., Rep. Prog. Phys. 78, 066501 (2015).             %
+     %   D.C. Langreth et al., J. Phys.: Condens. Matter 21, 084203 (2009). %
+     %                                                                      %
+     % If you are calculating stress with vdW-DF, please also cite:         %
+     %                                                                      %
+     %   R. Sabatini et al., J. Phys.: Condens. Matter 24, 424209 (2012).   %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     %  vdW-DF NEWS:                                                        %
+     %                                                                      %
+     %  * vdW-DF3 is now available. DOI: 10.1021/acs.jctc.0c00471           %
+     %    use with input_dft = 'vdW-DF3-opt1' or 'vdW-DF3-opt2'             %
+     %                                                                      %
+     %  * Unscreened and range-separated hybrid vdW-DF-cx functionals       %
+     %    DOI: 10.1063/1.4986522 and 10.1088/1361-648X/ac2ad2               %
+     %    use with input_dft = 'vdW-DF-cx0'    and 'vdW-DF-ahcx'            %
+     %  * Unscreened and range-separated hybrid vdW-DF2-b86r functionals    %
+     %    DOI: 10.1063/1.4986522 and DOI: 10.1103/PhysRevX.12.041003        %
+     %    use with input_dft = 'vdW-DF2-br0' and 'vdW-DF2-ahbr'             %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+     Starting wfcs are   24 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  2.78E-09,  avg # of iterations = 52.3
+
+     total cpu time spent up to now is      101.0 secs
+
+     End of band structure calculation
+
+          k = 0.1250 0.1250 0.0547 (  5185 PWs)   bands (ev):
+
+   -14.4306 -12.5745  -9.0133  -8.9304  -4.2568  -1.9943  -0.9903  -0.4161
+     1.3293   1.8011   2.5500   2.6359   2.7131   3.3660   3.5485   3.7826
+     4.2947   4.3706   7.5198   7.8212   8.3083   9.1854
+
+          k = 0.1250 0.1250 0.1640 (  5192 PWs)   bands (ev):
+
+   -14.4305 -12.5745  -9.0696  -8.8707  -4.2609  -1.9997  -1.0036  -0.4147
+     1.3219   1.7884   2.5497   2.6955   2.9564   3.3659   3.4179   3.5629
+     4.3264   4.4247   7.4727   7.7105   8.5043   9.1039
+
+          k = 0.1250 0.3750 0.0547 (  5194 PWs)   bands (ev):
+
+   -13.8626 -13.0726  -8.7679  -8.7309  -4.2988  -3.3446  -0.7761   0.1487
+     0.5744   1.2149   1.6321   1.9225   3.0536   3.5600   3.6130   3.7358
+     4.4245   4.4933   8.0223   8.8169   8.9565   9.1041
+
+          k = 0.1250 0.3750 0.1640 (  5193 PWs)   bands (ev):
+
+   -13.8625 -13.0726  -8.7899  -8.7091  -4.2920  -3.3536  -0.7632   0.1786
+     0.5625   1.1515   1.5897   1.9483   3.2768   3.4381   3.5571   3.7112
+     4.4125   4.5493   7.9846   8.6786   8.9438   9.2154
+
+          k = 0.3750 0.3750 0.0547 (  5210 PWs)   bands (ev):
+
+   -13.5020 -13.1551  -8.5959  -8.5786  -4.6804  -4.2393  -0.8277  -0.1626
+     0.7545   1.6526   1.9788   2.6757   2.8639   3.0269   3.0492   3.0741
+     3.4915   3.7634   7.6492   8.1839   9.1913   9.7453
+
+          k = 0.3750 0.3750 0.1640 (  5220 PWs)   bands (ev):
+
+   -13.5020 -13.1551  -8.6028  -8.5717  -4.6807  -4.2425  -0.8156  -0.1784
+     0.7963   1.7448   1.9737   2.7262   2.8198   2.8722   2.8867   3.0373
+     3.6979   3.7333   7.5551   8.3964   9.2748   9.8806
+
+     the Fermi energy is     6.2968 ev
+     (compare with:     6.2968 eV, computed in scf)
+
+     Writing all to output data dir ../out/SbOBr.save/ :
+     XML data file, pseudopotentials, collected wavefunctions
+
+     init_run     :     60.79s CPU     54.18s WALL (       1 calls)
+     electrons    :    937.76s CPU     46.67s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :     57.94s CPU     53.44s WALL (       1 calls)
+     hinit0       :      1.03s CPU      0.37s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :    937.45s CPU     46.65s WALL (       1 calls)
+     v_of_rho     :     53.58s CPU     53.21s WALL (       1 calls)
+     newd         :      1.53s CPU      0.34s WALL (       1 calls)
+     PAW_pot      :      4.09s CPU      0.22s WALL (       1 calls)
+     vdW_kernel   :     52.71s CPU     52.71s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      1.14s CPU      0.07s WALL (       6 calls)
+     cegterg      :    919.82s CPU     45.90s WALL (      19 calls)
+
+     Called by *egterg:
+     cdiaghg      :      9.64s CPU      0.61s WALL (     320 calls)
+     h_psi        :    615.00s CPU     27.34s WALL (     339 calls)
+     s_psi        :     22.40s CPU      1.26s WALL (     339 calls)
+     g_psi        :     65.27s CPU      4.12s WALL (     314 calls)
+
+     Called by h_psi:
+     h_psi:calbec :     31.27s CPU      1.05s WALL (     339 calls)
+     vloc_psi     :    500.68s CPU     21.16s WALL (     339 calls)
+     add_vuspsi   :     11.22s CPU      0.80s WALL (     339 calls)
+
+     General routines
+     calbec       :     31.23s CPU      1.05s WALL (     339 calls)
+     fft          :      0.65s CPU      0.22s WALL (      63 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       1 calls)
+     fftw         :    127.58s CPU      4.47s WALL (    8278 calls)
+     interpolate  :      0.10s CPU      0.00s WALL (       1 calls)
+     davcio       :      0.14s CPU      0.00s WALL (      12 calls)
+
+     Parallel routines
+
+     PWSCF        :  16m40.29s CPU   1m41.03s WALL
+
+
+   This run was terminated on:   5:11:35  29Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
