@@ -1,0 +1,5 @@
+&dos
+   outdir = '../',
+   prefix='BiSCl',
+   fildos='BiSCl.dos',
+/
