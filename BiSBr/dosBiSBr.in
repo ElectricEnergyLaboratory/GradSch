@@ -1,0 +1,5 @@
+&dos
+   outdir = '../',
+   prefix='BiSBr',
+   fildos='BiSBr.dos',
+/
