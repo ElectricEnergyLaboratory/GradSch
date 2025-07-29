@@ -1,5 +1,5 @@
 &dos
-   outdir = '../',
+   outdir = '../out/',
    prefix='BiSI',
    fildos='BiSI.dos',
 /
