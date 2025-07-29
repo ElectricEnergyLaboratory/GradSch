@@ -1,0 +1,42 @@
+&CONTROL
+ calculation = 'nscf'
+ prefix = 'SbOBr'
+ pseudo_dir = './pseudo'
+ outdir = '../out'
+/
+&SYSTEM
+  input_dft = "vdw-df"
+  occupations='tetrahedra'
+  ecutwfc=50
+  ecutrho=400   
+   ntyp             = 3
+   nat              = 6
+   ibrav            = 0
+/
+&ELECTRONS
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Sb 121.76 Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+Br 79.904 Br.pbe-n-kjpaw_psl.1.0.0.UPF
+O 15.999 O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS {automatic}
+4 4 4 1 1 1
+CELL_PARAMETERS angstrom
+3.83533600000000 0.00000000000000 0.00000000000000
+0.00000000000000 3.83533600000000 0.00000000000000
+0.00000000000000 0.00000000000000 8.77040200000000
+
+ATOMIC_POSITIONS angstrom
+Sb 0.0000000000 1.9176680000 7.5405109867 
+Sb 1.9176680000 0.0000000000 1.2298910133 
+Br 1.9176680000 0.0000000000 5.9530682247 
+Br 0.0000000000 1.9176680000 2.8173337753 
+O 0.0000000000 0.0000000000 0.0000000000 
+O 1.9176680000 1.9176680000 0.0000000000 
+
