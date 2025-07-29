@@ -1,0 +1,6 @@
+&bands
+   outdir = '../',
+   prefix='BiSI',
+   filband='BiSI.band',
+   lsym=.true.
+/
