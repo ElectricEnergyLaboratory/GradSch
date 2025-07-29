@@ -1,0 +1,5 @@
+&dos
+   outdir = '../',
+   prefix='SbOBr',
+   fildos='SbOBr.dos',
+/
