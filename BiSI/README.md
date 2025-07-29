@@ -1,5 +1,7 @@
 # BiSI
 
+Fermi energy is 6.4579 ev
+
 このディレクトリには、BiSI に関するDFT計算結果、構造ファイル、バンド構造図、状態密度（PDOS）などを格納します。
 
 - 計算手法：PBE + vdW補正（例：rVV10）

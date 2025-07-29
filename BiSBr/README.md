@@ -1,5 +1,7 @@
 # BiSBr
 
+the Fermi energy is 6.7370 ev
+
 このディレクトリには、BiSBr に関するDFT計算結果、構造ファイル、バンド構造図、状態密度（PDOS）などを格納します。
 
 - 計算手法：PBE + vdW補正（例：rVV10）
