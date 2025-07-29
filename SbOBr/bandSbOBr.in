@@ -1,0 +1,6 @@
+&bands
+   outdir = '../',
+   prefix='SbOBr',
+   filband='SbOBr.band',
+   lsym=.true.
+/
