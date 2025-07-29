@@ -1,5 +1,5 @@
 
-     Program BANDS v.7.4.1 starts on 29Jul2025 at  5:18:44 
+     Program BANDS v.7.4.1 starts on 29Jul2025 at  5:30: 2 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -15,18 +15,310 @@
      Threads/MPI process:                    32
 
      MPI processes distributed on     1 nodes
-     3073 MiB available memory on the printing compute node when the environment starts
+     2962 MiB available memory on the printing compute node when the environment starts
 
 
      Reading xml data from directory:
 
-     ../SbOBr.save/
-     Message from routine qexsd_readschema :
-     xml data file ../SbOBr.save/data-file-schema.xml not found
+     ../out/SbOBr.save/
+     file Sb.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  5S renormalized
+     file Br.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 4P renormalized
+     file O.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-     Error in routine read_xml_file (1):
-     fatal error reading xml file
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= VDW-DF
+                           (   1   4   4   0   1   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
 
-     stopping ...
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        1669     845    241               117437    41639    6351
+
+     Using Slab Decomposition
+
+
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     % You are using vdW-DF, which was implemented by the Thonhauser group. %
+     % Please cite the following two papers that made this development      %
+     % possible and the two reviews that describe the various versions:     %
+     %                                                                      %
+     %   T. Thonhauser et al., PRL 115, 136402 (2015).                      %
+     %   T. Thonhauser et al., PRB 76, 125112 (2007).                       %
+     %   K. Berland et al., Rep. Prog. Phys. 78, 066501 (2015).             %
+     %   D.C. Langreth et al., J. Phys.: Condens. Matter 21, 084203 (2009). %
+     %                                                                      %
+     % If you are calculating stress with vdW-DF, please also cite:         %
+     %                                                                      %
+     %   R. Sabatini et al., J. Phys.: Condens. Matter 24, 424209 (2012).   %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     %  vdW-DF NEWS:                                                        %
+     %                                                                      %
+     %  * vdW-DF3 is now available. DOI: 10.1021/acs.jctc.0c00471           %
+     %    use with input_dft = 'vdW-DF3-opt1' or 'vdW-DF3-opt2'             %
+     %                                                                      %
+     %  * Unscreened and range-separated hybrid vdW-DF-cx functionals       %
+     %    DOI: 10.1063/1.4986522 and 10.1088/1361-648X/ac2ad2               %
+     %    use with input_dft = 'vdW-DF-cx0'    and 'vdW-DF-ahcx'            %
+     %  * Unscreened and range-separated hybrid vdW-DF2-b86r functionals    %
+     %    DOI: 10.1063/1.4986522 and DOI: 10.1103/PhysRevX.12.041003        %
+     %    use with input_dft = 'vdW-DF2-br0' and 'vdW-DF2-ahbr'             %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point:  0.1250 0.1250 0.0547   x coordinate   0.0000
+     high-symmetry point:  0.1250 0.1250 0.1640   x coordinate   0.1093
+     high-symmetry point:  0.1250 0.3750 0.0547   x coordinate   0.3822
+     high-symmetry point:  0.1250 0.3750 0.1640   x coordinate   0.4915
+     high-symmetry point:  0.3750 0.3750 0.0547   x coordinate   0.7644
+     high-symmetry point:  0.3750 0.3750 0.1640   x coordinate   0.8737
+
+     Plottable bands (eV) written to file SbOBr.band.gnu
+     Bands written to file SbOBr.band
+
+ **************************************************************************
+
+                    xk=(   0.12500,   0.12500,   0.05466  )
+
+     point group C_s (m)    
+     there are  2 classes
+     the character table:
+
+       E     s    
+A'     1.00  1.00
+A''    1.00 -1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+                                                                 
+     s        2
+                                                                 
+
+     Band symmetry, C_s (m)     point group:
+
+     e(  1 -  1) =    -14.43057  eV     1   --> A'             
+     e(  2 -  2) =    -12.57454  eV     1   --> A''            
+     e(  3 -  3) =     -9.01333  eV     1   --> A'             
+     e(  4 -  4) =     -8.93040  eV     1   --> A'             
+     e(  5 -  5) =     -4.25678  eV     1   --> A'             
+     e(  6 -  6) =     -1.99431  eV     1   --> A'             
+     e(  7 -  7) =     -0.99027  eV     1   --> A'             
+     e(  8 -  8) =     -0.41609  eV     1   --> A''            
+     e(  9 -  9) =      1.32926  eV     1   --> A''            
+     e( 10 - 10) =      1.80111  eV     1   --> A'             
+     e( 11 - 11) =      2.54997  eV     1   --> A''            
+     e( 12 - 12) =      2.63591  eV     1   --> A'             
+     e( 13 - 13) =      2.71312  eV     1   --> A'             
+     e( 14 - 14) =      3.36598  eV     1   --> A''            
+     e( 15 - 15) =      3.54851  eV     1   --> A''            
+     e( 16 - 16) =      3.78261  eV     1   --> A'             
+     e( 17 - 17) =      4.29466  eV     1   --> A'             
+     e( 18 - 18) =      4.37065  eV     1   --> A'             
+     e( 19 - 19) =      7.51979  eV     1   --> A'             
+     e( 20 - 20) =      7.82118  eV     1   --> A'             
+     e( 21 - 21) =      8.30829  eV     1   --> A'             
+     e( 22 - 22) =      9.18536  eV     1   --> A''            
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.12500,   0.12500,   0.16399  )
+
+     Band symmetry, C_s (m)     point group:
+
+     e(  1 -  1) =    -14.43048  eV     1   --> A'             
+     e(  2 -  2) =    -12.57455  eV     1   --> A''            
+     e(  3 -  3) =     -9.06957  eV     1   --> A'             
+     e(  4 -  4) =     -8.87072  eV     1   --> A'             
+     e(  5 -  5) =     -4.26092  eV     1   --> A'             
+     e(  6 -  6) =     -1.99969  eV     1   --> A'             
+     e(  7 -  7) =     -1.00364  eV     1   --> A'             
+     e(  8 -  8) =     -0.41465  eV     1   --> A''            
+     e(  9 -  9) =      1.32194  eV     1   --> A''            
+     e( 10 - 10) =      1.78835  eV     1   --> A'             
+     e( 11 - 11) =      2.54967  eV     1   --> A''            
+     e( 12 - 12) =      2.69550  eV     1   --> A'             
+     e( 13 - 13) =      2.95636  eV     1   --> A'             
+     e( 14 - 14) =      3.36592  eV     1   --> A''            
+     e( 15 - 15) =      3.41787  eV     1   --> A'             
+     e( 16 - 16) =      3.56287  eV     1   --> A''            
+     e( 17 - 17) =      4.32637  eV     1   --> A'             
+     e( 18 - 18) =      4.42472  eV     1   --> A'             
+     e( 19 - 19) =      7.47265  eV     1   --> A'             
+     e( 20 - 20) =      7.71045  eV     1   --> A'             
+     e( 21 - 21) =      8.50428  eV     1   --> A'             
+     e( 22 - 22) =      9.10392  eV     1   --> A''            
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.12500,   0.37500,   0.05466  )
+
+     point group C_1 (1)    
+     there are  1 classes
+     the character table:
+
+       E    
+A      1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+                                                                 
+
+     Band symmetry, C_1 (1)     point group:
+
+     e(  1 -  1) =    -13.86256  eV     1   --> A              
+     e(  2 -  2) =    -13.07262  eV     1   --> A              
+     e(  3 -  3) =     -8.76790  eV     1   --> A              
+     e(  4 -  4) =     -8.73094  eV     1   --> A              
+     e(  5 -  5) =     -4.29875  eV     1   --> A              
+     e(  6 -  6) =     -3.34458  eV     1   --> A              
+     e(  7 -  7) =     -0.77612  eV     1   --> A              
+     e(  8 -  8) =      0.14865  eV     1   --> A              
+     e(  9 -  9) =      0.57435  eV     1   --> A              
+     e( 10 - 10) =      1.21494  eV     1   --> A              
+     e( 11 - 11) =      1.63214  eV     1   --> A              
+     e( 12 - 12) =      1.92254  eV     1   --> A              
+     e( 13 - 13) =      3.05359  eV     1   --> A              
+     e( 14 - 14) =      3.55995  eV     1   --> A              
+     e( 15 - 15) =      3.61304  eV     1   --> A              
+     e( 16 - 16) =      3.73575  eV     1   --> A              
+     e( 17 - 17) =      4.42452  eV     1   --> A              
+     e( 18 - 18) =      4.49326  eV     1   --> A              
+     e( 19 - 19) =      8.02225  eV     1   --> A              
+     e( 20 - 20) =      8.81689  eV     1   --> A              
+     e( 21 - 21) =      8.95653  eV     1   --> A              
+     e( 22 - 22) =      9.10409  eV     1   --> A              
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.12500,   0.37500,   0.16399  )
+
+     Band symmetry, C_1 (1)     point group:
+
+     e(  1 -  1) =    -13.86251  eV     1   --> A              
+     e(  2 -  2) =    -13.07262  eV     1   --> A              
+     e(  3 -  3) =     -8.78993  eV     1   --> A              
+     e(  4 -  4) =     -8.70907  eV     1   --> A              
+     e(  5 -  5) =     -4.29201  eV     1   --> A              
+     e(  6 -  6) =     -3.35355  eV     1   --> A              
+     e(  7 -  7) =     -0.76321  eV     1   --> A              
+     e(  8 -  8) =      0.17861  eV     1   --> A              
+     e(  9 -  9) =      0.56249  eV     1   --> A              
+     e( 10 - 10) =      1.15150  eV     1   --> A              
+     e( 11 - 11) =      1.58973  eV     1   --> A              
+     e( 12 - 12) =      1.94833  eV     1   --> A              
+     e( 13 - 13) =      3.27679  eV     1   --> A              
+     e( 14 - 14) =      3.43811  eV     1   --> A              
+     e( 15 - 15) =      3.55714  eV     1   --> A              
+     e( 16 - 16) =      3.71122  eV     1   --> A              
+     e( 17 - 17) =      4.41253  eV     1   --> A              
+     e( 18 - 18) =      4.54933  eV     1   --> A              
+     e( 19 - 19) =      7.98462  eV     1   --> A              
+     e( 20 - 20) =      8.67864  eV     1   --> A              
+     e( 21 - 21) =      8.94376  eV     1   --> A              
+     e( 22 - 22) =      9.21540  eV     1   --> A              
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.37500,   0.37500,   0.05466  )
+
+     point group C_s (m)    
+     there are  2 classes
+     the character table:
+
+       E     s    
+A'     1.00  1.00
+A''    1.00 -1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+                                                                 
+     s        2
+                                                                 
+
+     Band symmetry, C_s (m)     point group:
+
+     e(  1 -  1) =    -13.50203  eV     1   --> A'             
+     e(  2 -  2) =    -13.15515  eV     1   --> A''            
+     e(  3 -  3) =     -8.59593  eV     1   --> A'             
+     e(  4 -  4) =     -8.57855  eV     1   --> A'             
+     e(  5 -  5) =     -4.68041  eV     1   --> A'             
+     e(  6 -  6) =     -4.23932  eV     1   --> A'             
+     e(  7 -  7) =     -0.82770  eV     1   --> A'             
+     e(  8 -  8) =     -0.16261  eV     1   --> A''            
+     e(  9 -  9) =      0.75446  eV     1   --> A'             
+     e( 10 - 10) =      1.65264  eV     1   --> A''            
+     e( 11 - 11) =      1.97875  eV     1   --> A'             
+     e( 12 - 12) =      2.67572  eV     1   --> A''            
+     e( 13 - 13) =      2.86393  eV     1   --> A'             
+     e( 14 - 14) =      3.02693  eV     1   --> A''            
+     e( 15 - 15) =      3.04919  eV     1   --> A''            
+     e( 16 - 16) =      3.07415  eV     1   --> A'             
+     e( 17 - 17) =      3.49147  eV     1   --> A'             
+     e( 18 - 18) =      3.76337  eV     1   --> A'             
+     e( 19 - 19) =      7.64916  eV     1   --> A'             
+     e( 20 - 20) =      8.18394  eV     1   --> A''            
+     e( 21 - 21) =      9.19135  eV     1   --> A'             
+     e( 22 - 22) =      9.74531  eV     1   --> A'             
+
+ **************************************************************************
+
+ **************************************************************************
+
+                    xk=(   0.37500,   0.37500,   0.16399  )
+
+     Band symmetry, C_s (m)     point group:
+
+     e(  1 -  1) =    -13.50201  eV     1   --> A'             
+     e(  2 -  2) =    -13.15515  eV     1   --> A''            
+     e(  3 -  3) =     -8.60277  eV     1   --> A'             
+     e(  4 -  4) =     -8.57168  eV     1   --> A'             
+     e(  5 -  5) =     -4.68071  eV     1   --> A'             
+     e(  6 -  6) =     -4.24245  eV     1   --> A'             
+     e(  7 -  7) =     -0.81563  eV     1   --> A'             
+     e(  8 -  8) =     -0.17842  eV     1   --> A''            
+     e(  9 -  9) =      0.79626  eV     1   --> A'             
+     e( 10 - 10) =      1.74478  eV     1   --> A''            
+     e( 11 - 11) =      1.97367  eV     1   --> A'             
+     e( 12 - 12) =      2.72618  eV     1   --> A''            
+     e( 13 - 13) =      2.81981  eV     1   --> A'             
+     e( 14 - 14) =      2.87222  eV     1   --> A''            
+     e( 15 - 15) =      2.88667  eV     1   --> A'             
+     e( 16 - 16) =      3.03734  eV     1   --> A''            
+     e( 17 - 17) =      3.69790  eV     1   --> A'             
+     e( 18 - 18) =      3.73330  eV     1   --> A'             
+     e( 19 - 19) =      7.55511  eV     1   --> A'             
+     e( 20 - 20) =      8.39637  eV     1   --> A''            
+     e( 21 - 21) =      9.27479  eV     1   --> A'             
+     e( 22 - 22) =      9.88057  eV     1   -->   ?
+
+ **************************************************************************
+
+     BANDS        :   1m 9.92s CPU     55.97s WALL
+
+
+   This run was terminated on:   5:30:58  29Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
