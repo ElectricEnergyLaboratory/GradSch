@@ -12,7 +12,7 @@
   ntyp             = 3
   nat              = 12
   ibrav            = 0
-  nbands=36
+  nbnd=36
 /
 &ELECTRONS
 /

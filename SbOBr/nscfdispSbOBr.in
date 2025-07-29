@@ -1,18 +1,18 @@
 &CONTROL
- calculation = 'bands'
- prefix = 'SbOBr'
- pseudo_dir = './pseudo'
+ calculation = 'bands',
+ prefix = 'SbOBr',
+ pseudo_dir = './pseudo',
  outdir = '../out'
 /
 &SYSTEM
-  input_dft = "vdw-df"
-  occupations='fixed'
-  ecutwfc=50
-  ecutrho=400   
-   ntyp             = 3
-   nat              = 6
-   ibrav            = 0
-  nbnds=36
+  input_dft = "vdw-df",
+  occupations='fixed',
+  ecutwfc=50,
+  ecutrho=400,   
+   ntyp             = 3,
+   nat              = 6,
+   ibrav            = 0,
+  nbnd=36
 /
 &ELECTRONS
 /
