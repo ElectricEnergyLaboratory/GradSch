@@ -1,5 +1,7 @@
 # SbOBr
 
+Fermi energy is 6.2968 ev
+
 鈴木
 
 このディレクトリには、SbOBr に関するDFT計算結果、構造ファイル、バンド構造図、状態密度（PDOS）などを格納します。
